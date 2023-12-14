@@ -1,0 +1,39 @@
+/***********************************
+1. Tag styles
+2. Id styles
+3. Classes styles
+************************************/
+
+
+/************ 1. Tag styles ***********/
+
+table {
+    border-collapse: collapse;
+    margin: auto;
+}
+
+td, th {
+    border-bottom: 1px solid grey;
+    padding: 1px;
+    width: 200px;
+    text-align: center;
+}
+
+caption {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/************ 2. Id styles ***********/
+
+/************ 3. Classes styles ***********/
+
+.theader {
+    color:#ffffff;
+    background-color: #444444; 
+}
+
+.welkom-text {
+    text-align: justify;
+    margin-bottom: 15px;
+}

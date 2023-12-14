@@ -1,0 +1,44 @@
+/***********************************
+1. Universal body styles
+2. Tag styles
+3  Id styles
+4. Classes styles
+************************************/
+
+
+/********** 1. Universal body styles ***********/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+/********** 2. Tag styles ***********/
+
+ol, ul {
+    list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 100;
+}
+
+img {
+    max-width: 100vw;
+}
+/********** 3.  Id styles ***********/
+#menu-cart {
+
+}
+
+/********** 4. Class styles ***********/
+
+.section-1 {
+
+}
+
+.section-2 {
+    
+}

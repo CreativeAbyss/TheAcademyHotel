@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/master.css">
+    <title>Reserveren</title>
+</head>
+
+    <header role="banner">
+        <nav class="mainNav txt-cent" >
+            <ul>
+            <li><a class="navLink " href="index.html" > Home </a></li> |
+            <li><a class="navLink " href="restaurant.html" > Restaurant </a></li> |
+            <li><a class="navLink " href="kamer_reserveren.html"> Kamer reserveren </a></li> | 
+            <li><a class="navLink " href="contact.html" > Contact </a></li>
+        </ul>
+        </nav>
+    
+        <h1 class="txt-cent underline">The academy hotel - Kamer Reserveren</h1>
+    </header>
+
+     
+        
+        <section class="section-1 FLcontainer flex-row flex-column center-cont" id="kamers" role="complementary">
+            <article class="txt-cent" id="standaardKamer">
+                <h2 class="txt-cent underline"> Standaard kamer </h2>
+                <img id=ïmg class="photo" src="images/standaardkamer.jpg" alt="" >
+                <p class="beschrijving txt-cent"> Dit is een stanaard kamer voor een standaard prijs. </p>
+                <button class="button" id="reserveerStandaard" title="Reserveer"> Reserveer </button>
+            </article>
+            <article class="txt-cent" id="familieKamer">
+                <h2 class="txt-cent underline"> Familie kamer </h2>
+                <img class="photo" src="images/familiekamer.jpg" alt="">
+                <p class="beschrijving txt-cent">Ben je met je hele familie? dan hebben wij de perfecte kamer</p>
+                <button class="button" id="reserveerFamilie" title="Reserveer"> Reserveer </button>
+            </article>
+            <article class="txt-cent" id="suite">
+                <h2 class="txt-cent underline"> Suite </h2>
+                <img id="click" class="photo" src="images/suitekamer.jpg" alt="">
+                <p class="beschrijving txt-cent">onze speciale suite is beschikbaar voor jou om lekker te relaxen.</p>
+                <button class="button" id="reserveerSuite" title="Reserveer"> Reserveer </button>
+            </article>
+            
+        </section>
+
+        <section  id="bevestigKamers">
+            
+            <article class="txt-cent section-1">
+                <h2 id="resstandaardKamer"></h2>
+                <img id="bevestigImage">
+                <p id="shortDesc" class="shortdesc"></p>
+                <p id="longDesc" class="longdesc"></p>
+            </article>
+
+            <form  id="gegevens" name="gegevens"  >
+                <fieldset class="flex-col">
+                    <legend>Vul hier uw gegevens in:</legend>
+
+                <div class="flex-row flex-col gap center-cont">
+                    <label class="gegevens" for="v-naam">Voornaam:</label>
+                    <input type="text" id="v-naam" name="v-naam" required>
+                </div>
+                <div class="flex-row flex-col gap center-cont">
+                    <label class="gegevens" for="a-naam">Achternaam:</label>
+                    <input type="text" id="a-naam" name="a-naam" required>
+                </div>
+                <div class="flex-row flex-col gap  center-cont">
+                    <label class="gegevens" >Geslacht:</label>
+                    <div class="flex-row ali-cent between format-1 " >
+                        <div class="width">
+                            <input type="radio" id="man" name="geslacht" value="Man" >
+                            <label class="gegevens" for="man">man</label>
+                
+                            <input type="radio" id="vrouw" name="geslacht" value="Vrouw" >
+                            <label class="gegevens" for="vrouw">vrouw</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-row flex-col gap center-cont">
+                    <label class="gegevens" for="adres">Adres:</label>
+                    <input type="text" id="adres" name="adres" >
+                </div>
+                <div class="flex-row flex-col gap center-cont">
+                    <label class="gegevens" for="postcode">Postcode:</label>
+                    <input type="text" id="postcode" name="postcode" >
+                </div>
+                <div class="flex-row flex-col gap center-cont">
+                    <label class="gegevens" for="plaats">Plaats:</label>
+                    <input type="text" id="plaats" name="plaats" >
+                </div>
+                <div class="flex-row flex-col gap center-cont">
+                    <label class="gegevens" for="plaats">Land:</label>                    
+                    <select class="format" name="land" id="land" >
+                    <optgroup label="Landen">
+                    <option value="nederland">Nederland</option>
+                    <option value="duitsland">Duitsland</option>
+                    <option value="engeland">Engeland</option>
+                    <option value="spanje">Spanje</option>
+                    <option value="italie">Italie</option>
+                    </optgroup>
+                    </select>
+                </div>
+                <div class="flex-row flex-col gap center-cont">
+                    <label class="gegevens" for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="flex-row flex-col gap center-cont">
+                    <label class="gegevens" for="a-date">Aankomstdatum:</label>
+                    <input type="date" id="a-date" name="a-date" required>
+                </div>
+                <div class="flex-row flex-col gap center-cont">
+                    <label class="gegevens" for="v-date">Vertrekdatum:</label>
+                    <input type="date" id="v-date" name="v-date" required>
+                </div>
+                <div class="flex-row flex-col gap center-cont">
+                    <label class="gegevens" for="aantal">Aantal kamers:</label>
+                    <input type="number" id="aantal" name="aantal" required>
+                </div>
+                </fieldset>
+            
+                <div class="flex-row center-cont gap">
+                    <button class="button" id="reserveer"  value="Reserveren" >Reserveren</button>
+                    <input type="reset" class="button"  value="Reset">
+                </div>
+
+            </form>
+        </section>
+        
+        <section id="bevestiging" class="txt-cent" role="complementary">
+                <button class="button" id="annuleerBtn" title="cancel button"> Annuleer reservering </button>
+        </section>
+
+        <!-- <div id="modal">
+            <article id="modal-content">
+                <h3>Overzicht van de reservering:</h3>
+
+                <p id="overzichtVoornaam"></p>
+                <p id="overzichtAchternaam"></p>
+                <p id="overzichtGeslacht"></p>
+                <p id="overzichtAdres"></p>
+                <p id="overzichtPostcode"></p>
+                <p id="overzichtPlaats"></p>
+                <p id="overzichtLand"></p>
+                <p id="overzichtEmail"></p>
+                <p id="overzichtAankomst"></p>
+                <p id="overzichtVertrek"></p>
+                <p id="overzichtKamers"></p>
+                <form >
+                <button class="button buttonStyle" id="reserveerModal">Reserveer</button>
+                </form>
+                <button class="button buttonStyle" id="annuleerModal">Annuleer</button>          
+        </div> -->
+
+    </main>
+    </body>
+
+    
+    
+    <script src="js/script.js" type="text/javascript"></script>
+    <script src="js/navbar.js" type="text/javascript"></script>
+    <script src="js/rooms.js" type="text/javascript"></script>
+    <script src="js/dcheck.js" type="text/javascript"></script>
+    <!-- <script src="js/modal.js" type="text/javascript"></script> -->
+    <script src="js/localStorage.js" type="text/javascript"></script>
+    <script src="js/promise.min.js"></script>
+    <script src="js/fetch.umd.js"></script>
+    <script src="js/app.js"></script>
+</html>

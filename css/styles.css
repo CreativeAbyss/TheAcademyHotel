@@ -1,0 +1,520 @@
+/**********************************
+***********************************
+COLOR-GUIDE:
+
+Headline Text          #ffffff (white)
+Background             #ffffff (white)
+Text (standaard)       #444444 (grey)
+Link                   #ce1b28 (Red)
+MainNav Link           #cecece (Light grey)
+MainNav background     #111111 (Black)
+Subnav link            #ffffff (white)
+SubNav Background      #ff0000 (Red)
+Button text            #ffffff (white)
+Button Background      #444444 (grey)
+Button Hover           #ff0000 (Red)
+Section Background     #fcfcfc (Lighter grey)
+Section Border         rgb(0,0,0,) (Black)
+Section shadow         rgb(0,0,0,) (Black)
+
+
+**********************************
+**********************************/
+
+
+
+/***********************************
+1. Tag styles
+2. Id styles
+3. Classes styles
+4. Combination styles 
+5. Sudo classes
+************************************/
+
+
+/************ 1. Tag styles ***********/
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    color: #444444;
+    background-color: #ffffff;
+}
+
+h1 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 21px;
+    font-weight: 700;
+}
+
+a {
+    color: #ce1b28;
+    font-size: 1.2rem;
+}
+
+main {
+    width: 75%;
+    margin-bottom: 1rem;
+    margin: 0 auto;  
+}
+
+p {
+    margin: 0px 0px 0px 0px;
+    /* margin-bottom: 0; */
+}
+
+li {
+    display: inline
+}
+
+ul, ol {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+/* label {
+    width: 12em;
+    height: 12em;
+    margin: 100px 100px 100px 0px;
+    padding: 5px;
+    border-radius: 7px;
+} */
+
+input, textarea, select {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/************ 2. Id styles ***********/
+
+#googleNav {
+    height: 100%;
+    width: 100%;
+    
+}
+
+#locatie {
+    padding: 5%;
+    font-size: 1.2rem;
+}
+
+#bevestiging, #gegevens{
+    display: none;
+}
+
+#subNav {
+    margin-bottom: 1%;
+    margin-left: 30px;
+}
+
+#menu-cart {        /* ID AANGEPAST */
+    margin-bottom: 1rem;
+    padding: 5%;
+    background-color: #fcfcfc;
+    box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.025);
+    border-radius: 5px;
+    border:rgba(0, 0, 0, 0.025);
+    border: inset 1px rgba(0, 0, 0, 0.2);
+}
+
+/************ 3. Classes styles ***********/
+
+.box {
+    height: 300px;
+    background-color: #111111;
+
+}
+
+.txt-cent {
+    text-align: center;
+}
+
+.active {
+    text-decoration: underline;
+}
+
+.non-deco {
+    text-decoration: none;
+}
+
+.center-cont {
+    justify-content: center;
+}
+
+.ali-cent{
+    align-items: center;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.between {
+    justify-content: space-around;
+}
+
+.margin {
+    margin-top: 100px;
+}
+
+.gap-up{
+    margin: 10px 0px 0px 0px;
+    
+}
+
+.gap {
+    margin: 0px 0px 10px 0px;
+}
+
+.navLink {
+    color: #cecece;
+}
+
+.mainNav {
+    background-color: #111111;
+    font-size: 2rem; 
+    position: sticky;
+    top: 0;
+}
+
+.photo {
+    width: 100%;
+    height: auto;
+    margin-bottom: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    cursor: pointer;
+}
+
+.beschrijving {
+    margin-bottom: 2rem;
+}
+
+.hotel {
+    height: 450px;
+    width: 100%;
+}
+
+.subNavLink {
+    color: #ffffff;
+    background-color: #ff0000;
+    padding: 8px;
+    margin: 0.5%;
+    border-radius: 4px;
+}
+
+.button {
+    background-color: #444444;
+    color:#ffffff;
+    padding: 10px 40px;
+}
+
+.button:hover {
+    background-color: #ff0000;
+    }
+
+.c-locatie {
+    width: 39%;
+    float: left;
+}
+
+.c-contact {
+    width: 39%;
+    float: right;
+}
+
+.FLcontainer {
+    gap: 10px;
+}
+
+.bg {
+    background-image: url(../images/hotelHeader.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+}
+
+.centered-container {
+    align-items: center;
+    height: 100%
+}
+
+.centered h1 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.section-1 {         /* CLASS AANGEPAST */
+    margin-bottom: 1rem;
+    padding: 5%;
+    background-color: #fcfcfc;
+    box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.025);
+    border-radius: 5px;
+    border:rgba(0, 0, 0, 0.025);
+    border: inset 1px rgba(0, 0, 0, 0.2);
+}
+
+.format {
+    width: 153px;
+    height: 25px;
+}
+
+.format-1 {
+    height: 30px;
+    width: 153px;
+}
+
+.shortdesc{
+    width:600px;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    margin: 10px auto;
+
+}
+
+.longdesc {
+    width: 600px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+/************ 4. Combination styles ***********/ 
+
+.gegevens {
+    width: 200px;
+}      
+
+input[type="radio"] {
+    opacity: 0;
+    margin: 0;
+    width: 0;
+} 
+
+input[type="radio"] + label {
+    border: 2px #444444 solid;
+    padding: 4px 10px;
+    border-radius: 7px;
+}
+
+input[type="radio"]:checked + label {
+    border: 2px #444444 solid;
+    padding: 4px 10px;
+    border-radius: 7px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #ffffff;
+    background-color: #444444;
+}
+
+input[type="radio"]+ label:hover  {
+    border: 2px #e62a2a solid;
+}
+
+input[type="text"], input[type="url"], input[type="email"], input[type="tel"], input[type="password"],
+input[type="search"], input[type="number"], input[type="date"], input[type="time"] {
+    width: 12em;
+    padding: 5px;
+    border-radius: 7px;
+}
+
+.contacts {
+    margin: 10px;
+    padding: 20px;
+    border: black 1px solid
+}
+
+.contacts p {
+    padding: 10px;
+    
+     
+}
+
+/************ 5. Sudo classes ***********/
+
+input:valid {
+    border: 2px solid green;
+} 
+
+input:invalid {
+    border: 2px solid red;
+} 
+
+             /*************************** MODAL ****************************/
+
+#modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+
+}
+
+/* Modal Content/Box */
+
+#modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+.modalFlex {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 300px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover, .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.globalButtonStyle {
+    text-align: center;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 1rem 3.2rem;
+    color: #fcfcfc;
+    background-color: #555555;
+    cursor: pointer;
+}
+
+.globalButtonStyle:hover{
+    background-color: red;
+    color: white;
+}
+
+#modal-content p {
+    margin: 20px;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+#modal-content h3 {
+    margin: 20px;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+/*************  MEDIA QUERYS  ************/
+
+@media (max-width: 400px) { 
+
+    /************ 2. Id styles ***********/    
+    
+    #subNav {
+        margin-bottom: 1%;
+        margin-left: 0px;
+        }
+    
+    /************ 3. Classes styles ***********/
+    
+    .flex-column {
+        display: flex;
+        flex-direction: column; 
+    }
+    
+    .center-cont {
+        justify-content: center;
+    }
+
+    .c-locatie {
+        width: auto;
+        float: none;
+    }
+    
+    .c-contact {
+        width: auto;
+        float: none;
+    }
+    
+    }
+
+    @media (max-width: 375px) {
+
+    thead, th {
+        display: none;
+    }
+
+    table, tr, td {
+        display: block;
+        margin: auto;
+        text-align: center;
+        width: 200px;
+    }
+
+    table:nth-child(odd) tbody {
+        background-color: #ebebeb;
+    }
+
+    table:nth-child(odd) tr:nth-child(odd) {
+        
+        border-top: #444444 solid 3px;
+        border-bottom: #444444 solid 3px;
+    }
+
+    table:nth-child(even) tr:nth-child(even) {
+        
+        border-top: #444444 solid 3px;
+        border-bottom: #444444 solid 3px;
+    }
+
+      table:last-of-type tr:nth-child(3) {
+         
+        border-bottom: #444444 solid 3px;
+    }
+
+    td:nth-child(1)::before {
+        content: "Gerecht: ";
+    }
+
+    td:nth-child(2)::before {
+        content: "Ömschrijving: ";
+    }
+
+    td:nth-child(3)::before {
+        content: "Prijs: ";
+    }
+
+    td:nth-child(4)::before {
+        content: "Allergie informatie: ";
+    }
+
+    .flex-col {
+        display: flex;
+        flex-direction: column;
+
+    }
+    
+    }
